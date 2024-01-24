@@ -15,7 +15,7 @@
 <body>
   <div class="main-container">
     <div class="inner-container">
-      <header class="header debug-border">
+      <header class="header">
         <a class="nav__link nav__link--logo" rel="noopener">
           <h1 class="logo"> &#60; SN &#47; &#62; </h1>
         </a>
@@ -39,7 +39,7 @@
       </header>
       <!-- <div class="flex-margin"></div> -->
       <main class="main-projects debug-border">
-        <div class="projects-display debug-border">
+        <section class="section--project__main debug-border">
           <!-- <div class={`overview ${display==0 ? "" : "hidden"}`}> -->
             <div>
             <span class="pre-heading">Hi there! I am...</span>
@@ -57,74 +57,71 @@
           <div class={`repo-green ${display==2 ? "" : "hidden"}`}></div>
           <!-- Repo 3 -->
           <div class={`repo-blue ${display==3 ? "" : "hidden"}`}></div>
-        </div>
-        <div class="projects-sidebar debug-border">
-          <div class="project-list">
-            <ul>
-              <li>
-                <a href="https://github.com/shosukenoma/stock-price-scraper" class="project-link" target="_blank" rel='noreferrer'>
-                  <div class="repo-card debug-border">
-                    <div class={`repo-card-colorbar ${displayColor}`}></div>
-                    <div class="repo-card-content">
-                      <div class="flex-1">
-                        <h3>{customHeading ? customHeading : convertRepoName(repoName)}</h3>
-                      </div>
-                      <div class="flex-2">
-                        <p>{repo.description}</p>
-                      </div>
-                      <div class="flex-3">
-                        <p>{repo.language}</p>
-                        <p>{repo.updated_at?.substring(0, 10)}</p>
-                      </div>
+        </section>
+        <section class="section--project__sidebar debug-border">
+          <ul class="project__list">
+            <li>
+              <a href="https://github.com/shosukenoma/stock-price-scraper" class="project__link" target="_blank" rel='noreferrer'>
+                <div class="repo-card debug-border">
+                  <div class="repo-card-colorbar orange"></div>
+                  <div class="repo-card-content">
+                    <div class="flex-1">
+                      <h3>Stock Price Scraper</h3>
+                    </div>
+                    <div class="flex-2">
+                      <p>A stock market web scraper...</p>
+                    </div>
+                    <div class="flex-3">
+                      <p>Go</p>
+                      <p>2023-09-27</p>
                     </div>
                   </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://shosukenoma.github.io/slack-note-v2/" class="project-link" target="_blank" rel='noreferrer'>
-                  <div class="repo-card debug-border">
-                    <div class={`repo-card-colorbar ${displayColor}`}></div>
-                    <div class="repo-card-content">
-                      <div class="flex-1">
-                        <h3>{customHeading ? customHeading : convertRepoName(repoName)}</h3>
-                      </div>
-                      <div class="flex-2">
-                        <p>{repo.description}</p>
-                      </div>
-                      <div class="flex-3">
-                        <p>{repo.language}</p>
-                        <p>{repo.updated_at?.substring(0, 10)}</p>
-                      </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://shosukenoma.github.io/slack-note-v2/" class="project__link" target="_blank" rel='noreferrer'>
+                <div class="repo-card debug-border">
+                  <div class="repo-card-colorbar pink"></div>
+                  <div class="repo-card-content">
+                    <div class="flex-1">
+                      <h3>Slack Note</h3>
+                    </div>
+                    <div class="flex-2">
+                      <p>A minimalistic note-taking app...</p>
+                    </div>
+                    <div class="flex-3">
+                      <p>JavaScript</p>
+                      <p>2023-10-04</p>
                     </div>
                   </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/shosukenoma/sho-noma-v1/" class="project-link" target="_blank" rel='noreferrer'>
-                  <div class="repo-card debug-border">
-                    <div class={`repo-card-colorbar ${displayColor}`}></div>
-                    <div class="repo-card-content">
-                      <div class="flex-1">
-                        <h3>{customHeading ? customHeading : convertRepoName(repoName)}</h3>
-                      </div>
-                      <div class="flex-2">
-                        <p>{repo.description}</p>
-                      </div>
-                      <div class="flex-3">
-                        <p>{repo.language}</p>
-                        <p>{repo.updated_at?.substring(0, 10)}</p>
-                      </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/shosukenoma/sho-noma-v1/" class="project__link" target="_blank" rel='noreferrer'>
+                <div class="repo-card debug-border">
+                  <div class="repo-card-colorbar light-green"></div>
+                  <div class="repo-card-content">
+                    <div class="flex-1">
+                      <h3>Portfolio Website</h3>
                     </div>
-                  </div>  
-                </a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
+                    <div class="flex-2">
+                      <p>My portfolio website built using React.js...</p>
+                    </div>
+                    <div class="flex-3">
+                      <p>JavaScript</p>
+                      <p>2024-01-24</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer class="debug-border">
-        <p>Copyright © 2023 Sho Noma</p>
+        <p>Copyright ©2023 Sho Noma</p>
       </footer>
     </div>
   </div>
