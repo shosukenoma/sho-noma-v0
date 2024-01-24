@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>Portfolio &#8212; Sho Noma</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="inner-container debug-border">
+      <header class="header debug-border">
+        <a class="logo-link" rel="noopener">
+          <h1 class="logo"> &#60; SN &#47; &#62; </h1>
+        </a>
+        <ul class="links">
+          <li>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/shosukenoma/"  target="_blank">
+              <i class="devicon devicon-linkedin-plain"></i>
+            </a>
+          </li>
+          <li class="github">
+            <a class="github-link" href="https://github.com/shosukenoma" target="_blank">
+              <i class="devicon devicon-github-original"></i>
+            </a>
+          </li>
+          <li class="gmail">
+            <button class="gmail-btn" onClick={copyToClipboard}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" /></svg>
+            </button>
+          </li>
+        </ul>
+      </header>
+      <div class="flex-margin"></div>
+      <main class="main-projects debug-border">
+        <div class="projects-display debug-border">
+          <!-- <div class={`overview ${display==0 ? "" : "hidden"}`}> -->
+            <div>
+            <span class="pre-heading">Hi there! I am...</span>
+            <h2>Sho Noma <br class='heading-line-break'/> &#8212; Software Developer</h2>
+            <span class="intro-text">
+              <p>I&apos;m a software developer specializing in building accessible websites.
+                I have experience building applications in Python, Go and React.js.</p>
+              <p>My interest lies in solving complex problems with logic
+                and designing applications with a focus on user accessibility.</p>
+            </span>
+          </div>
+          {/* Repo 1 */}
+          <div class={`repo-red ${display==1 ? "" : "hidden"}`}></div>
+          {/* Repo 2 */}
+          <div class={`repo-green ${display==2 ? "" : "hidden"}`}></div>
+          {/* Repo 3 */}
+          <div class={`repo-blue ${display==3 ? "" : "hidden"}`}></div>
+        </div>
+        <div class="projects-sidebar debug-border">
+          <div class="project-list">
+            <ul>
+              <li>
+                <a href="https://github.com/shosukenoma/stock-price-scraper" class="project-link" target="_blank" rel='noreferrer'>
+                  <div class="repo-card debug-border">
+                    <div class={`repo-card-colorbar ${displayColor}`}></div>
+                    <div class="repo-card-content">
+                      <div class="flex-1">
+                        <h3>{customHeading ? customHeading : convertRepoName(repoName)}</h3>
+                      </div>
+                      <div class="flex-2">
+                        <p>{repo.description}</p>
+                      </div>
+                      <div class="flex-3">
+                        <p>{repo.language}</p>
+                        <p>{repo.updated_at?.substring(0, 10)}</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://shosukenoma.github.io/slack-note-v2/" class="project-link" target="_blank" rel='noreferrer'>
+                  <div class="repo-card debug-border">
+                    <div class={`repo-card-colorbar ${displayColor}`}></div>
+                    <div class="repo-card-content">
+                      <div class="flex-1">
+                        <h3>{customHeading ? customHeading : convertRepoName(repoName)}</h3>
+                      </div>
+                      <div class="flex-2">
+                        <p>{repo.description}</p>
+                      </div>
+                      <div class="flex-3">
+                        <p>{repo.language}</p>
+                        <p>{repo.updated_at?.substring(0, 10)}</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/shosukenoma/sho-noma-v1/" class="project-link" target="_blank" rel='noreferrer'>
+                  <div class="repo-card debug-border">
+                    <div class={`repo-card-colorbar ${displayColor}`}></div>
+                    <div class="repo-card-content">
+                      <div class="flex-1">
+                        <h3>{customHeading ? customHeading : convertRepoName(repoName)}</h3>
+                      </div>
+                      <div class="flex-2">
+                        <p>{repo.description}</p>
+                      </div>
+                      <div class="flex-3">
+                        <p>{repo.language}</p>
+                        <p>{repo.updated_at?.substring(0, 10)}</p>
+                      </div>
+                    </div>
+                  </div>  
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer class="debug-border">
+        <p>Copyright © 2023 Sho Noma</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
