@@ -156,7 +156,7 @@ p {
   flex: 1 1 auto;
 } */
 
-.main-projects {
+.main {
   margin: 0 0 0 11.0rem;
   flex: 1 1 auto; /* Turn on flex-grow */
   height: 62.5rem;
@@ -337,10 +337,10 @@ footer p {
   gap: 2.4rem;
   justify-content: center;
 }
-/* 
+
 .debug-border {
   border: solid #777 2px;
-} */
+}
 
 /**************************/
 /* BELOW 640px (Phones) */
@@ -355,7 +355,7 @@ footer p {
     padding: 2.0rem;
   }
 
-  .main-projects {
+  .main {
     margin: 0;
     display: flex;
     flex-direction: column;
