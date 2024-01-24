@@ -87,6 +87,10 @@ p {
   background-color: inherit; /* #242424 */
 }
 
+/* ////// */
+/* HEADER */
+/* ////// */
+
 .header {
   display: flex;
   justify-content: space-between;
