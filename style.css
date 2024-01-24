@@ -84,7 +84,7 @@ p {
 
   display: flex;
   flex-direction: column;
-  background-color: #242424;
+  background-color: inherit; /* #242424 */
 }
 
 .header {
@@ -93,24 +93,23 @@ p {
   align-items: center;
 }
 
-.logo-link {
+.nav__link--logo {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
 }
 
 .logo {
   font-size: 3.0rem;
 }
 
-.links {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  gap: 3.2rem;
-}
-
-.github-link {
+.nav__link {
   text-decoration: none;
 }
 
