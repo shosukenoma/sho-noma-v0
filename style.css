@@ -169,7 +169,7 @@ p {
   column-gap: 9.0rem; */
 }
 
-.projects-display {
+.section--project__main {
   /* padding-left: 12.0rem; */
   align-self: center;
   width: 60%;
@@ -210,20 +210,20 @@ p {
   display: none;
 }
 
-.projects-display .pre-heading {
+.section--project__main .pre-heading {
   font-size: 1.6rem;
 }
 
-.projects-display h2 {
+.section--project__main h2 {
   font-size: 3.6rem;
   margin-top: 1.0rem;
 }
 
-.projects-display p {
+.section--project__main p {
   margin-top: 2.4rem;
 }
 
-.projects-sidebar {
+.section--project__sidebar {
   align-self: center;
   width: 35%;
   height: 100%;
@@ -231,6 +231,73 @@ p {
 
   display: flex;
   align-items: center; /* Here */
+}
+
+.repo-card {
+  display: flex;
+  margin: 1.8rem 0;
+}
+
+.repo-card-colorbar {
+  width: 1.2rem;
+  height: auto;
+  /* margin: 2.0rem 0; */
+}
+
+.repo-card-content {
+  /* border: solid 3px #000; 
+  /* box-shadow: black; */
+  /* border-radius: 12px; */
+  /* width: 25%;  */
+  padding: 0 2.0rem 0 1.0rem;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.repo-card-content p {
+  font-size: 1.2rem;
+}
+
+.flex-3 {
+  display: flex;
+  gap: 2.0rem;
+}
+
+/* Color Selectors */
+
+.dark-green {
+  background-color: #23372C;
+}
+
+.light-green {
+  background-color: #9EBCAB;
+}
+
+.pink {
+  background-color: #FAC0B8;
+}
+
+.orange {
+  background-color: #F49300;  
+}
+
+.red {
+  background-color: #FF5958;
+}
+
+.purple {
+  background-color: #4D354B;
+}
+
+.light-blue {
+  background-color: #507B8A;
+}
+
+.dark-blue {
+  background-color: #008C91;  
 }
 
 .filter-bar {
@@ -241,17 +308,14 @@ p {
   font-size: 1.6rem;
 }
 
-.project-list {
+.project__list {
   height: auto;
   padding-right: 4.8rem;
   /* overflow: scroll; */
-}
-
-.project-list ul {
   list-style: none;
 }
 
-.project-link {
+.project__link {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -273,10 +337,10 @@ footer p {
   gap: 2.4rem;
   justify-content: center;
 }
-
+/* 
 .debug-border {
   border: solid #777 2px;
-}
+} */
 
 /**************************/
 /* BELOW 640px (Phones) */
@@ -297,7 +361,7 @@ footer p {
     flex-direction: column;
   }
 
-  .projects-display {
+  .section--project__main {
     width: 100%;
   }
 
@@ -307,7 +371,7 @@ footer p {
 
   
 
-  .projects-sidebar {
+  .section--project__sidebar {
     width: 100%;
     display: flex;
     /* align-items: center; */
