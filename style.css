@@ -389,6 +389,25 @@ footer p {
     width: 100%;
   }
 
+  .project__content {
+    /* display: none; */
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+    transition: all .3s linear
+  }
+  
+  .project__content--introduction {
+    transform-origin: top;
+  }
+  
+  .project__content--active {
+    display: block;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
   .heading-line-break {
     display: inline;
   }
