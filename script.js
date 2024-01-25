@@ -35,3 +35,30 @@ gmailBtn?.addEventListener('click', function() {
     alert(`You have copied "${copyText}"`); 
   });
 })
+
+const projectList = document.querySelector('.project__list')
+projectList.addEventListener('click', function(e) {
+  e.preventDefault();
+  const projectLink = e.target.closest('.project__link')
+  const projectNum = Number(projectLink?.getAttribute('data-project-num'))
+  
+  // Preventing null error
+  if (!projectNum) return;
+  
+  const projectContentAll = document.querySelectorAll('.project__content')
+  const projectIntroduction = document.querySelector('.project__content--introduction')
+  const projectContent = document.querySelector(`.project__content--${projectNum}`)
+
+  const showProject = function(projectElement) {
+    projectContentAll.forEach(el => {
+      el.classList.remove('project__content--active')
+    })
+    projectElement.classList.add('project__content--active')
+  }
+
+  if(projectContent.classList.contains('project__content--active')) {
+    showProject(projectIntroduction)
+  } else {
+    showProject(projectContent)
+  }
+})

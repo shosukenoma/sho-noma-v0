@@ -13,8 +13,8 @@
   <title>Portfolio &#8212; Sho Noma</title>
 </head>
 <body>
-  <div class="main-container">
-    <div class="inner-container">
+  <div class="main__container">
+    <div class="inner__container">
       <header class="header">
         <a class="nav__link nav__link--logo" rel="noopener">
           <h1 class="logo"> &#60; SN &#47; &#62; </h1>
@@ -39,10 +39,8 @@
       </header>
       <!-- <div class="flex-margin"></div> -->
       <main class="main">
-        <section class="section--project__main debug-border">
-          <!-- <div class={`overview ${display==0 ? "" : "hidden"}`}> -->
-            <div>
-            <!-- <span class="pre-heading">Hi there! I am...</span> -->
+        <section class="section--project__display debug-border">
+          <div class="project__content project__content--introduction project__content--active">
             <h2>Sho Noma <br class='heading-line-break'/> &#8212; Software Developer</h2>
             <span class="intro-text">
               <p>Hi there! I am a software developer with experience in building applications using Python, Go and JavaScript.</p>
@@ -50,106 +48,59 @@
                 in the field of finance, advertising and digital media.</p>
             </span>
           </div>
-          <!-- Repo 1 -->
-          <div class="hidden"></div>
-          <!-- Repo 2 -->
-          <div class="hidden"></div>
-          <!-- Repo 3 -->
-          <div class="hidden"></div>
+          <!-- Project 1 -->
+          <div class="project__content project__content--1">
+            <h2>Project 1</h2>
+            <span class="intro-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam lorem quis pulvinar malesuada. Fusce interdum eleifend enim at iaculis. Integer sed diam id nunc pretium eleifend at porta est. Pellentesque velit felis, semper mattis nunc ac, vehicula porta felis. Ut leo justo, tincidunt id vestibulum sit amet, consequat vel sem.</p>
+            </span>
+          </div>
+          <!-- Project 2 -->
+          <div class="project__content project__content--2">
+            <h2>Project 2</h2>
+            <span class="intro-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam lorem quis pulvinar malesuada. Fusce interdum eleifend enim at iaculis. Integer sed diam id nunc pretium eleifend at porta est. Pellentesque velit felis, semper mattis nunc ac, vehicula porta felis. Ut leo justo, tincidunt id vestibulum sit amet, consequat vel sem.</p>
+            </span>
+          </div>
+          <!-- Project 3 -->
+          <div class="project__content project__content--3">
+            <h2>Project 3</h2>
+            <span class="intro-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam lorem quis pulvinar malesuada. Fusce interdum eleifend enim at iaculis. Integer sed diam id nunc pretium eleifend at porta est. Pellentesque velit felis, semper mattis nunc ac, vehicula porta felis. Ut leo justo, tincidunt id vestibulum sit amet, consequat vel sem.</p>
+            </span>
+          </div>
         </section>
         <section class="section--project__sidebar debug-border">
           <ul class="project__list">
             <li>
-              <a href="https://github.com/shosukenoma/stock-price-scraper" class="project__link" target="_blank" rel='noreferrer'>
-                <div class="repo-card debug-border">
-                  <div class="repo-card-colorbar orange"></div>
-                  <div class="repo-card-content">
-                    <div class="flex-1">
-                      <h3>Stock Price Scraper</h3>
-                    </div>
-                    <!-- <div class="flex-2">
-                      <p>A stock market web scraper...</p>
-                    </div>
-                    <div class="flex-3">
-                      <p>Go</p>
-                      <p>2023-09-27</p>
-                    </div> -->
+              <a href="" class="project__link" rel='noopener' data-project-num='1'>
+              <!-- https://github.com/shosukenoma/stock-price-scraper -->
+                <div class="project__item debug-border">
+                  <div class="project__colorbar orange"></div>
+                  <div class="project__name">
+                    <p>Stock Price Scraper</p>
                   </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://shosukenoma.github.io/slack-note-v2/" class="project__link" target="_blank" rel='noreferrer'>
-                <div class="repo-card debug-border">
-                  <div class="repo-card-colorbar pink"></div>
-                  <div class="repo-card-content">
-                    <div class="flex-1">
-                      <h3>Slack Note</h3>
-                    </div>
-                    <!-- <div class="flex-2">
-                      <p>A minimalistic note-taking app...</p>
-                    </div>
-                    <div class="flex-3">
-                      <p>JavaScript</p>
-                      <p>2023-10-04</p>
-                    </div> -->
+              <a href="" class="project__link" rel='noopener' data-project-num='2'>
+              <!-- https://shosukenoma.github.io/slack-note-v2/ -->
+                <div class="project__item debug-border">
+                  <div class="project__colorbar pink"></div>
+                  <div class="project__name">
+                    <p>Slack Note</p>
                   </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://github.com/shosukenoma/sho-noma-v1/" class="project__link" target="_blank" rel='noreferrer'>
-                <div class="repo-card debug-border">
-                  <div class="repo-card-colorbar light-green"></div>
-                  <div class="repo-card-content">
-                    <div class="flex-1">
-                      <h3>Portfolio Website</h3>
-                    </div>
-                    <!-- <div class="flex-2">
-                      <p>My portfolio website built using React.js...</p>
-                    </div>
-                    <div class="flex-3">
-                      <p>JavaScript</p>
-                      <p>2024-01-24</p>
-                    </div> -->
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <!-- <a href="" class="project__link" rel='noreferrer'> -->
-                <div class="repo-card debug-border blank-card">
-                  <div class="repo-card-colorbar"></div>
-                  <div class="repo-card-content">
-                    <div class="flex-1">
-                      
-                    </div>
-                    <!-- <div class="flex-2">
-                      <p>My portfolio website built using React.js...</p>
-                    </div>
-                    <div class="flex-3">
-                      <p>JavaScript</p>
-                      <p>2024-01-24</p>
-                    </div> -->
-                  </div>
-                </div>
-              <!-- </a> -->
-            </li>
-            <li>
-              <a href="#" class="project__link" rel='noreferrer'>
-                <div class="repo-card debug-border">
-                  <div class="repo-card-colorbar purple"></div>
-                  <div class="repo-card-content">
-                    <div class="flex-1">
-                      <h3>Work In Progress...</h3>
-                    </div>
-                    <!-- <div class="flex-2">
-                      <p>My portfolio website built using React.js...</p>
-                    </div>
-                    <div class="flex-3">
-                      <p>JavaScript</p>
-                      <p>2024-01-24</p>
-                    </div> -->
+              <a href="" class="project__link" rel='noopener' data-project-num='3'>
+              <!-- https://github.com/shosukenoma/sho-noma-v1/ -->
+                <div class="project__item debug-border">
+                  <div class="project__colorbar light-green"></div>
+                  <div class="project__name">
+                    <p>Portfolio Website</p>
                   </div>
                 </div>
               </a>
