@@ -104,6 +104,10 @@ p {
   cursor: pointer;
 }
 
+/* .logo {
+  transition: all 0.3s linear;
+} */
+
 .nav__links {
   list-style: none;
   display: flex;

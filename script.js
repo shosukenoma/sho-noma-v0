@@ -25,6 +25,14 @@ const defaultRepoInfos = [
   },
 ]
 
+const navLinkLogo = document.querySelector('.logo')
+navLinkLogo.addEventListener('mouseenter', function(e) {
+  navLinkLogo.textContent = '< Sho Noma / >'
+})
+navLinkLogo.addEventListener('mouseleave', function(e) {
+  navLinkLogo.textContent = '< SN / >'
+})
+
 const gmailBtn = document.querySelector('.gmail-btn')
 console.log(gmailBtn);
 gmailBtn?.addEventListener('click', function() {
