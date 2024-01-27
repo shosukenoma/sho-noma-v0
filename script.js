@@ -47,7 +47,7 @@ gmailBtn?.addEventListener('click', function() {
 const projectList = document.querySelector('.project__list')
 projectList.addEventListener('click', function(e) {
   e.preventDefault();
-  const projectLink = e.target.closest('.project__link')
+  const projectLink = e.target.closest('.project__tab')
   const projectNum = Number(projectLink?.getAttribute('data-project-num'))
   
   // Preventing null error

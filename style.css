@@ -206,12 +206,31 @@ p {
   opacity: 1;
 }
 
-.content-text {
+.content__text {
   text-wrap: balance;
 }
 
 .heading-line-break {
   display: none;
+}
+
+.project__links {
+  display: flex;
+  gap: 3.2rem;
+  /* justify-content: space-between; */
+}
+
+.project__link {
+  text-decoration: underline;
+  color: inherit;
+
+  font-size: 1.6rem;
+  margin-top: 3.0rem;
+}
+
+.project__link:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .repo-red {
@@ -338,7 +357,7 @@ p {
   list-style: none;
 }
 
-.project__link {
+.project__tab {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
